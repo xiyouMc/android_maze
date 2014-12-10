@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mc" >
+
+    <TextView
+        android:id="@+id/maze"
+        android:layout_width="fill_parent"
+        android:layout_height="400px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="-8dp"
+        android:scrollbars="none"
+        android:textScaleX="1.1"
+        android:textSize="10pt" 
+        />
+    <!-- android:bufferType="spannable" -->
+
+     <EditText
+        android:id="@+id/maze1"
+        android:layout_width="fill_parent"
+        android:layout_height="400px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        
+        android:textSize="20pt" 
+        android:hint="请手动按行输入迷宫（0代表通路，1代表不通），并且按行输入用点号隔开"
+        android:textColor="#050505"
+        /> 
+    
+
+    
+    <!-- android:padding="-8dp" -->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/maze"
+        android:text="行号："
+        android:textColor="#8B5A00"
+        android:textSize="20pt" />
+
+    <EditText
+        android:id="@+id/row"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView1"
+        android:layout_alignTop="@id/textView1"
+        android:layout_toRightOf="@id/textView1"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/row"
+        android:layout_alignParentRight="true"
+        android:text="生成路径"
+        android:textSize="13pt" />
+
+     <Button
+        android:id="@+id/shoudong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="确定创建"
+        android:textSize="13pt" /> 
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="22dp"
+        android:text="列号："
+        android:textColor="#8B5A00"
+        android:textSize="20pt" />
+
+    <EditText
+        android:id="@+id/cal"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView2"
+        android:layout_alignTop="@id/textView2"
+        android:layout_toRightOf="@id/textView2"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/cal"
+        android:text="@string/tvent"
+        android:textSize="15pt" />
+
+    <Button
+        android:id="@+id/clear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/cal"
+        android:text="清除"
+        android:textSize="20pt" />
+
+    <Button
+        android:id="@+id/enter1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/clear1"
+        android:layout_below="@id/cal"
+        android:layout_toLeftOf="@id/clear1"
+        android:text="确定"
+        android:textSize="20pt" />
+
+    <Button
+        android:id="@+id/creat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="自动创建迷宫"
+        android:textSize="13pt" />
+
+    <Button
+        android:id="@+id/shoudongcreat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" 
+        android:layout_alignParentBottom="true"
+        android:text="@string/shoudongcreat"
+        android:textSize="13pt"/>
+
+    <TextView
+        android:id="@+id/p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@id/path"
+        android:layout_toLeftOf="@id/path"
+        android:layout_toRightOf="@id/creat"
+        android:gravity="center_horizontal"
+        android:textSize="35pt" />
+
+</RelativeLayout>

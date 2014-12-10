@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">AndroidMaze</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">迷宫</string>
+    <string name="tvent">确定行号,列号：</string>
+    <string name="shoudongcreat">手动创建迷宫</string>
+</resources>
